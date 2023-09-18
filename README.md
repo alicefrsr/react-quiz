@@ -1,15 +1,15 @@
-# React quiz
+# React Quiz
 
-Simple React quiz with 15 questions, 4 possible answers for each.
+> A simple React Quiz with 15 questions, with 4 possible answers.
 
-Built to learn and practice: useReducer, the Context API, how to set up and
-deploy a fake REST API Server using JSON-server.
+To learn and practice: useReducer, the Context API, how to set up a fake REST
+API Server using JSON-server.
 
 ### Functionalities:
 
 #### Timer:
 
-A 2 min 30 countdown automatically starts when clicking on the Start button.
+A 2min30sec countdown automatically starts when clicking on the Start button.
 Upon completion or if time runs out, user gets redirected to results screen
 displaying total amount of points earned.
 
@@ -22,11 +22,10 @@ highscore.
 User can re-take the quiz as many times he/she wishes by clicking on the Restart
 button, and can exit the quiz at any time by clicking on the Cancel button.
 
-This project was bootstrapped with [Vite](https://vitejs.dev/).
-
 ### Available Scripts
 
-In the project directory, you can run:
+This project was bootstrapped with [Vite](https://vitejs.dev/). In the project
+directory, you can run:
 
 #### `npm install`
 

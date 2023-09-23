@@ -30,20 +30,23 @@ button, and can exit the quiz at any time by clicking on the Cancel button.
 
 This project was bootstrapped with [Vite](https://vitejs.dev/).
 
-#### `npm install`
-
-Downloads dependencies defined in the package.json file and generates the
-node_modules folder with the installed modules
-
 In the server directory, you can run:
 
+#### `npm install`
+
 #### `npm install nodemon`
+
 #### `npm run express-server`
 
 Launches the quiz questions API on
 [http://localhost:8000/api/v1/questions](http://localhost:8000).
 
+In client/src/context/QuizContext.jsx, you can change BASE_URL to
+'http://localhost:8000'
+
 In the client directory, you can run:
+
+#### `npm install`
 
 #### `npm run dev`
 

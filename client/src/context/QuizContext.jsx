@@ -1,5 +1,8 @@
 import { createContext, useContext, useEffect, useReducer } from 'react';
 
+// const BASE_URL = 'http://localhost:8000';
+const BASE_URL = 'https://react-quiz-weld.vercel.app';
+
 const QuizContext = createContext();
 
 const SECONDS_PER_QUESTIONS = 10; // passed in value
@@ -105,8 +108,7 @@ function QuizProvider({ children }) {
   );
 
   useEffect(() => {
-    // fetch('http://localhost:8000/api/v1/questions')
-    fetch('https://react-quiz-weld.vercel.app/api/v1/questions')
+    fetch(`${BASE_URL}/api/v1/questions`)
       .then((res) => res.json())
       .then((data) => dispatch({ type: 'dataReceived', payload: data }))
       .catch((err) => dispatch({ type: 'dataFailed' }));

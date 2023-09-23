@@ -4,7 +4,7 @@ import express from 'express';
 import questionsRoute from './routes/questionsRoute.js';
 
 const app = express();
-const PORT = 8000; // cli (mac) $export=PORT=500
+const PORT = 8000; // cli (mac) $export=PORT=8000
 // app.use(cors());
 
 // app.use(bodyParser.json());

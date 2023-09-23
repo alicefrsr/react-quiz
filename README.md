@@ -5,6 +5,10 @@
 To learn and practice: useReducer, the Context API, set up a basic backend using
 Express, deploy on Vercel.
 
+### Live site:
+
+https://react-quiz-6l23.vercel.app/
+
 ### Functionalities:
 
 #### Timer:
@@ -35,7 +39,7 @@ node_modules folder with the installed modules
 #### `npm run server`
 
 Launches the quiz questions API on
-[http://localhost:8000/questions](http://localhost:8000).
+[http://localhost:8000/api/v1/questions](http://localhost:8000).
 
 #### `npm run dev`
 

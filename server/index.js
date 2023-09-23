@@ -13,11 +13,15 @@ app.use(cors());
 app.use('/api/v1/questions', questionsRoute);
 
 app.get('/api/v1', (req, res) => {
-  res.status(200).send('Welcome to this very basic Quiz questions API');
+  res
+    .status(200)
+    .send(
+      'Welcome to this very basic Quiz API --> 15 questions on /api/v1/questions'
+    );
 });
 
 app.listen(PORT, () => {
   console.log(
-    `Express server running on port ${PORT}. Go to /api/v1/questions for API.`
+    `Express server running on port ${PORT}. Go to /api/v1/questions to see data.`
   );
 });

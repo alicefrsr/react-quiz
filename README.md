@@ -28,18 +28,22 @@ button, and can exit the quiz at any time by clicking on the Cancel button.
 
 ### Available Scripts
 
-This project was bootstrapped with [Vite](https://vitejs.dev/). In the project
-directory, you can run:
+This project was bootstrapped with [Vite](https://vitejs.dev/).
 
 #### `npm install`
 
 Downloads dependencies defined in the package.json file and generates the
 node_modules folder with the installed modules
 
-#### `npm run server`
+In the server directory, you can run:
+
+#### `npm install nodemon`
+#### `npm run express-server`
 
 Launches the quiz questions API on
 [http://localhost:8000/api/v1/questions](http://localhost:8000).
+
+In the client directory, you can run:
 
 #### `npm run dev`
 

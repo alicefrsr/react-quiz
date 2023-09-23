@@ -1,6 +1,6 @@
 # React Quiz
 
-> A simple React Quiz with 15 questions, with 4 possible answers.
+> A simple React Quiz with 15 questions, each with 4 possible answers.
 
 To learn and practice: useReducer, the Context API, how to set up a fake REST
 API Server using JSON-server.

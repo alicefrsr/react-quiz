@@ -5,7 +5,7 @@
   "main": "server.js",
   "type": "module",
   "scripts": {
-    "express-server": "nodemon server.js"
+    "express-server": "nodemon index.js"
   },
   "repository": {
     "type": "git",

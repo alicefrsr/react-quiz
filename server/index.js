@@ -10,12 +10,14 @@ const PORT = 8000; // cli (mac) $export=PORT=8000
 // app.use(bodyParser.json());
 // app.use(express.json());
 
-app.use('/api/v1/questions', questionsRoute);
+app.use('/questions', questionsRoute);
 
-app.get('/api/v1', (req, res) => {
+app.get('/', (req, res) => {
   res.status(200).send('Welcome to this very basic Quiz questions API');
 });
 
 app.listen(PORT, () => {
-  console.log(`Express server running on port ${PORT}. Go to /api/v1 for API.`);
+  console.log(
+    `Express server running on port ${PORT}. Go to /questions for API.`
+  );
 });

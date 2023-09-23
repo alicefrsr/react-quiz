@@ -1,11 +1,7 @@
 import questions from '../data/questions.js';
 
-// let questions = [];
-// const questions = fetch('./data/questions.json')
-//   .then((results) => results.json())
-//   .then(console.log);
 
-// @ /api/v1/questions/
+// @ /questions/
 // GET Get all questions
 // Public
 const getQuestions = (req, res) => {

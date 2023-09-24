@@ -2,12 +2,10 @@
 
 > A simple React Quiz with 15 questions, each with 4 possible answers.
 
-To learn and practice: useReducer, the Context API, set up a basic backend using
-Express, deploy on Vercel.
+To learn and practice: useReducer, the Context API, deploy on Netlify (no
+backend).
 
 ### Live site:
-
-https://react-quiz-6l23.vercel.app/
 
 ### Functionalities:
 
@@ -29,20 +27,6 @@ button, and can exit the quiz at any time by clicking on the Cancel button.
 ### Available Scripts
 
 This project was bootstrapped with [Vite](https://vitejs.dev/).
-
-In the server directory, you can run:
-
-#### `npm install`
-
-#### `npm install nodemon`
-
-#### `npm run express-server`
-
-Launches the quiz questions API on
-[http://localhost:8000/api/v1/questions](http://localhost:8000).
-
-In client/src/context/QuizContext.jsx, you can change BASE_URL to
-'http://localhost:8000'
 
 In the client directory, you can run:
 

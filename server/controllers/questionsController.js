@@ -1,9 +1,9 @@
 import questions from '../data/questions.js';
+// import questions from '../data/questionsCopy.json';
 
-
-// @ /questions/
-// GET Get all questions
-// Public
+// @desc Get all questions
+// @route GET /api/v1/questions
+// @access Public
 const getQuestions = (req, res) => {
   if (questions.length === 0) {
     res.status(400).json({ message: 'No questions' });

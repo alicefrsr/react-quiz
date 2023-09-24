@@ -24,7 +24,11 @@ function quizReducer(state, action) {
 
   switch (action.type) {
     case 'dataReceived':
-      return { ...state, questions: action.payload, status: 'ready' };
+      return {
+        ...state,
+        questions: action.payload,
+        status: 'ready',
+      };
 
     case 'dataFailed':
       return { ...state, status: 'error' };

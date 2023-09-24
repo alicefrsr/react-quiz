@@ -30,7 +30,7 @@ button, and can exit the quiz at any time by clicking on the Cancel button.
 
 This project was bootstrapped with [Vite](https://vitejs.dev/).
 
-In the client directory, you can run:
+In the root directory, you can run:
 
 #### `npm install`
 

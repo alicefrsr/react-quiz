@@ -7,6 +7,8 @@ backend).
 
 ### Live site:
 
+https://another-react-quiz.netlify.app/
+
 ### Functionalities:
 
 #### Timer:

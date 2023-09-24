@@ -1,16 +1,16 @@
 import { createContext, useContext, useEffect, useReducer } from 'react';
 
 // const BASE_URL = 'http://localhost:8000';
-const BASE_URL = 'https://react-quiz-weld.vercel.app';
-
+// const BASE_URL = 'https://react-quiz-weld.vercel.app';
+import questions from '../../data/questions';
 const QuizContext = createContext();
 
 const SECONDS_PER_QUESTIONS = 10; // passed in value
 
 // reducer: initial state + reducer fn
 const initialState = {
-  questions: [],
-  status: 'loading', // 'error', 'ready', 'active', 'finished'
+  questions: questions,
+  status: 'ready', // 'error', 'loading', 'active', 'finished'
   currQuestionIndex: 0,
   selectedAnswer: null,
   points: 0,
@@ -23,15 +23,15 @@ function quizReducer(state, action) {
   const currQuestion = state.questions.at(state.currQuestionIndex);
 
   switch (action.type) {
-    case 'dataReceived':
-      return {
-        ...state,
-        questions: action.payload,
-        status: 'ready',
-      };
+    // case 'dataReceived':
+    //   return {
+    //     ...state,
+    //     questions: action.payload,
+    //     status: 'ready',
+    //   };
 
-    case 'dataFailed':
-      return { ...state, status: 'error' };
+    // case 'dataFailed':
+    //   return { ...state, status: 'error' };
 
     case 'start':
       return {
@@ -111,12 +111,12 @@ function QuizProvider({ children }) {
     0
   );
 
-  useEffect(() => {
-    fetch(`${BASE_URL}/api/v1/questions`)
-      .then((res) => res.json())
-      .then((data) => dispatch({ type: 'dataReceived', payload: data }))
-      .catch((err) => dispatch({ type: 'dataFailed' }));
-  }, []);
+  // useEffect(() => {
+  //   fetch(`${BASE_URL}/api/v1/questions`)
+  //     .then((res) => res.json())
+  //     .then((data) => dispatch({ type: 'dataReceived', payload: data }))
+  //     .catch((err) => dispatch({ type: 'dataFailed' }));
+  // }, []);
 
   return (
     <QuizContext.Provider
